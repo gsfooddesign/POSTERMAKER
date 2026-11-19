@@ -1,4 +1,4 @@
-const CACHE_NAME = "siniju-a3-9423c05e9ba50ebc";
+const CACHE_NAME = "siniju-a3-9e241e3eb9594863";
 const CORE_FILES = [
   "./",
   "./index.html",
