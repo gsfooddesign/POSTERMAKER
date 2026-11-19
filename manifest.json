@@ -1,0 +1,56 @@
+{
+  "canvas": {
+    "width": 1684,
+    "height": 2382,
+    "printWidth": 3508,
+    "printHeight": 4961
+  },
+  "assetBase": "테스트용이미지모음/",
+  "heads": [
+    "head_대표메뉴.png",
+    "head_새로운메뉴.png",
+    "head_식사메뉴.png",
+    "head_신메뉴출시.png",
+    "head_안주메뉴.png"
+  ],
+  "images": [
+    "image_곰탕.png",
+    "image_김치순대국.png",
+    "image_누룽지삼계탕.png",
+    "image_떡만두국.png",
+    "image_만두국.png",
+    "image_맑은순대국.png",
+    "image_뼈해장국.png",
+    "image_설렁탕.png",
+    "image_수육국밥.png",
+    "image_수육한상.png",
+    "image_순대곱창전골.png",
+    "image_순대곱창전골2.png",
+    "image_순대국.png",
+    "image_신의주감자탕.png",
+    "image_신의주술국.png",
+    "image_신의주정식.png",
+    "image_신의주해장국.png",
+    "image_알곱창국밥.png",
+    "image_얼큰순대국.png",
+    "image_오징어순대.png",
+    "image_왕만두.png",
+    "image_우거지소고기국밥.png",
+    "image_육개장.png",
+    "image_철판쭈삼이.png",
+    "image_청양오징어순대.png",
+    "image_한우소머리국밥.png"
+  ],
+  "prices": [
+    "__none__",
+    "price_10000.png",
+    "price_11000.png",
+    "price_12000.png",
+    "price_13000.png",
+    "price_38000.png"
+  ],
+  "footers": [
+    "footer_신의주.png",
+    "footer_신의주찹쌀순대.png"
+  ]
+}

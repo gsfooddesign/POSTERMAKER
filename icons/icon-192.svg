@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="0 0 192 192" role="img" aria-label="신의주 A3 포스터 생성기">
+  <rect width="192" height="192" rx="28" fill="#171b1f"/>
+  <rect x="42" y="24" width="108" height="144" rx="6" fill="#f8fafb"/>
+  <path d="M58 56h76M58 75h76M58 137h76" stroke="#d7a934" stroke-width="6" stroke-linecap="round"/>
+  <text x="96" y="119" text-anchor="middle" font-family="Arial, sans-serif" font-size="38" font-weight="800" fill="#171b1f">A3</text>
+</svg>

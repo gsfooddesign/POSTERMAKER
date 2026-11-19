@@ -1,0 +1,33 @@
+name: Update menu list
+on:
+  push:
+    branches: [main]
+    paths:
+      - '테스트용이미지모음/**'
+      - 'update_manifest.py'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: update-menu-list
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python update_manifest.py --web
+      - name: Save updated menu list
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add manifest.json manifest.js service-worker.js
+          if ! git diff --cached --quiet; then
+            git commit -m "Update menu list and image cache"
+            git push origin HEAD:main
+          fi

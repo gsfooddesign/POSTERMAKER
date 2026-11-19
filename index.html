@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>신의주 A3 포스터 생성기</title>
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app">
+      <aside class="panel" aria-label="포스터 옵션">
+        <div class="brand">
+          <strong>신의주 A3 포스터 생성기</strong>
+          <span>검색형 드롭다운으로 이미지 레이어 조합</span>
+        </div>
+
+        <section class="control-group">
+          <label for="headInput">상단 꾸밈영역</label>
+          <input id="headInput" class="combo-input" type="search" list="headList" autocomplete="off" placeholder="검색 또는 선택">
+          <datalist id="headList"></datalist>
+        </section>
+
+        <section class="control-group">
+          <label for="imageInput">메뉴 이미지와 메뉴명 영역</label>
+          <input id="imageInput" class="combo-input" type="search" list="imageList" autocomplete="off" placeholder="메뉴명 검색 또는 선택">
+          <datalist id="imageList"></datalist>
+        </section>
+
+        <section class="control-group">
+          <label for="priceInput">가격 (원)</label>
+          <input id="priceInput" class="combo-input" type="text" inputmode="numeric" list="priceList" autocomplete="off" placeholder="금액 입력" value="10000">
+          <datalist id="priceList"></datalist>
+          <label><input id="hidePrice" type="checkbox"> 가격없음</label>
+        </section>
+
+        <section class="control-group">
+          <label for="footerInput">하단 로고영역</label>
+          <input id="footerInput" class="combo-input" type="search" list="footerList" autocomplete="off" placeholder="검색 또는 선택">
+          <datalist id="footerList"></datalist>
+        </section>
+
+        <section class="control-group">
+          <label for="exportSize">내보내기 크기</label>
+          <select id="exportSize">
+            <option value="source">작업 크기 1684 x 2382</option>
+            <option value="print">300dpi 기준 3508 x 4961</option>
+          </select>
+        </section>
+
+        <section class="control-group">
+          <label for="exportFormat">파일 형식</label>
+          <select id="exportFormat">
+            <option value="image/png">PNG</option>
+            <option value="image/jpeg">JPG</option>
+          </select>
+        </section>
+
+        <div class="actions">
+          <button id="downloadBtn" type="button">이미지 내보내기</button>
+          <button id="resetBtn" type="button" class="secondary">기본 조합</button>
+          <button id="installBtn" type="button" class="secondary" hidden>앱 설치</button>
+        </div>
+
+        <p id="status" class="status" role="status">이미지를 불러오는 중입니다.</p>
+      </aside>
+
+      <section class="preview-shell" aria-label="A3 포스터 미리보기">
+        <canvas id="posterCanvas" width="1684" height="2382"></canvas>
+      </section>
+    </main>
+
+    <script src="manifest.js"></script>
+    <script src="fonts/hahmlet.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
